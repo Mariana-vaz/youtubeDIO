@@ -1,0 +1,248 @@
+/* Estilos Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Estilos para o header */
+/* Barra de navegação (header) */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo-container {
+    flex: 1;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    flex: 2; /* Aumenta o espaço da barra de pesquisa */
+    display: flex;
+    justify-content: center; /* Move a barra de pesquisa mais para a esquerda */
+    margin: 0 90px;
+    position: relative;
+}
+
+/* Campo de input da pesquisa */
+.search-input {
+    width: 100%; /* Usa 100% da largura da search-bar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: -10px;
+}
+
+/* Botão de pesquisa (ícone da lupa) */
+.search-button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 10px; /* Ajusta o botão para ficar mais colado à caixa de pesquisa */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Menu do usuário (imagem) */
+.user-menu {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end; /* Garante que o ícone do usuário fique no canto direito */
+}
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* Estilos para o conteúdo principal */
+.main-container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+.video-container {
+    flex: 2;
+    background-color: #fdfbfb;
+    padding: 10px;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.video-info {
+    color: #080808;
+}
+
+.video-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.video-description {
+    color: #1a1919;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.video-details {
+    font-size: 14px;
+    color: #1a1919;
+}
+
+.video-actions {
+    margin-top: 10px;
+}
+
+.action-button {
+    background-color: #f8f6f6;
+    color: #080808;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.action-button:hover {
+    background-color: #b31200;
+}
+
+/* Estilos para informações do usuário */
+.video-user-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.user-channel-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-channel-logouser {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Empurra a div para o canto direito */
+}
+
+.user-name {
+    font-size: 16px;
+    color: #050505;
+    margin-right: 10px;
+}
+
+.subscribers {
+    font-size: 14px;
+    color: #070707;
+    margin-right: 10px;
+}
+
+.subscribe-button {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #cc0000;
+}
+
+.likes-dislikes {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.likes,
+.dislikes {
+    margin-right: 20px;
+}
+
+/* Estilos para as recomendações */
+.recommendations {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.recommended-video {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.recommended-image {
+    width: 120px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.recommended-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.recommended-details p {
+    font-size: 14px;
+    color: #555;
+}
+
+.views {
+    font-size: 12px;
+    color: #050505;
+    margin-top: 5px;
+}
